@@ -2,24 +2,117 @@
 <html lang="en">
 
 <head>
-    <title>Nam nam vad gott</title>
-    <meta charset="utf-8" />
+    <title>Jackes dunderburgare</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <main>
-        <h1>Welcome to my burger place</h1>
+        <h1>Welcome to my Jackes dunderburgare</h1>
         <section>
             <h2>Select your burger</h2>
             <p>This is where you can choose what burger you want to order</p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>The Halloumi burger</th>
+                        <th>Nån med kyckling</th>
+                        <th>Nåt annat gott</th>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td><img width="200px"
+                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_Umami_Halloumi_Burgare.png">
+                        </td>¨
+                        <td><img width="200px"
+                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_CrispyNoChickenSriracha_Burger.png">
+                        </td>
+                        <td><img width="200px"
+                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_BBQ_Sandwich.png">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfooter>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Green and vegetarian!</li>
+                                <li>Contains massive amounts of lactose</li>
+                                <li>Contains gluten</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Free-range chicken!</li>
+                                <li>Contains lactose</li>
+                                <li>Contains gluten</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Delicious pulled pork and jalapenos</li>
+                                <li>Contains lactose</li>
+                                <li>Contains a lot of gluten</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tfooter>
+            </table>
+
         </section>
         <section>
             <h2>Customer information</h2>
             <p>This is you provide neccessary information about yourself</p>
+            <h3>Delivery information</h3>
+            <form>
+                <p>
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" name="fn" required="required" placeholder="First- and last name">
+                </p>
+                <p>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+                </p>
+                <p>
+                    <label for="street">Street name</label>
+                    <input type="text" id="street" name="st" required="required" placeholder="Street address name">
+                </p>
+                <p>
+                    <label for="house">House number</label>
+                    <input type="text" id="house" name="hn" required="required" placeholder="House or apartment number">
+                </p>
+                <p>
+                    <label for="payment">Payment</label><br>
+                    <select id="payment" name="pay">
+                        <option>Swish</option>
+                        <option>Mastercard</option>
+                        <option>Klarna</option>
+                        <option>Bitcoin</option>
+                        <option>Paypal</option>
+                    </select>
+                </p>
+                <p>
+                    <input type="radio" id="male" name="gnd" required="required" value="male">
+                    <label for="male">Male</label>
+                </p>
+                <p>
+                    <input type="radio" id="female" name="gnd" required="required" value="female">
+                    <label for="male">Female</label>
+                </p>
+                <p>
+                    <input type="radio" id="other" name="gnd" required="required" value="other" checked="checked">
+                    <label for="male">Other</label>
+                </p>
+
+            </form>
         </section>
+        <input type="submit" value="Place Order">
     </main>
     <footer>
-
+        <p>&copy; Jackes dunderburgare</p>
     </footer>
 </body>
 
