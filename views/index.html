@@ -3,67 +3,29 @@
 
 <head>
     <title>Jackes dunderburgare</title>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/menu.js"></script>
+    <script src="https://vuejs.org/js/vue.js"></script>
+    <script src="js/js_script.js" defer></script>
+    <script src="js/vue_script.js" defer></script>
 </head>
 
 <body>
     <main>
-        <h1>Welcome to my Jackes dunderburgare</h1>
-        <section>
-            <h2>Select your burger</h2>
-            <p>This is where you can choose what burger you want to order</p>
+        <header>
+            <h1>Welcome to my Jackes dunderburgare</h1>
+            <img
+                src="https://images.pexels.com/photos/141784/pexels-photo-141784.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
 
-            <table>
-                <thead>
-                    <tr>
-                        <th>The Halloumi burger</th>
-                        <th>Nån med kyckling</th>
-                        <th>Nåt annat gott</th>
-                    </tr>
-                </thead>
-                <tbody align="center">
-                    <tr>
-                        <td><img width="200px"
-                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_Umami_Halloumi_Burgare.png">
-                        </td>¨
-                        <td><img width="200px"
-                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_CrispyNoChickenSriracha_Burger.png">
-                        </td>
-                        <td><img width="200px"
-                                src="https://rethinkburgers.com/wp-content/uploads/2018/06/Max_BBQ_Sandwich.png">
-                        </td>
-                    </tr>
-                </tbody>
-                <tfooter>
-                    <tr>
-                        <td>
-                            <ul>
-                                <li>Green and vegetarian!</li>
-                                <li>Contains massive amounts of lactose</li>
-                                <li>Contains gluten</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Free-range chicken!</li>
-                                <li>Contains lactose</li>
-                                <li>Contains gluten</li>
-                            </ul>
-                        </td>
-                        <td>
-                            <ul>
-                                <li>Delicious pulled pork and jalapenos</li>
-                                <li>Contains lactose</li>
-                                <li>Contains a lot of gluten</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </tfooter>
-            </table>
-
+        </header>
+        <section id="menu">
+            <div class="menu_heading">
+                <h2>Select your burger</h2>
+                <p>This is where you can choose what burger you want to order</p>
+            </div>
         </section>
-        <section>
+        <section id="info">
             <h2>Customer information</h2>
             <p>This is you provide neccessary information about yourself</p>
             <h3>Delivery information</h3>
@@ -109,7 +71,7 @@
 
             </form>
         </section>
-        <input type="submit" value="Place Order">
+        <button id="orderButton" type="submit">Submit order</button>
     </main>
     <footer>
         <p>&copy; Jackes dunderburgare</p>
