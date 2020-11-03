@@ -1,0 +1,70 @@
+body {
+    font-family: arial;
+    font-size: 110%;
+    margin: 0;
+    width: 100%;
+}
+
+main {
+    width: 100%;
+}
+
+.lactose, .gluten, .vegetarian {
+    font-weight: bold;
+}
+
+#menu {
+    background-color: black;
+    color: white;
+    border: 2px dotted white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.menu_heading{
+    grid-column: 1/4;
+}
+#info {
+    border: 2px dotted black;
+}
+
+button {
+    margin: 1em;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem;
+}
+
+header {
+    margin: 1rem;
+    overflow: hidden;
+    height: 200px;
+}
+
+header h1 {
+    position: absolute;
+    padding: 0.5em;
+}
+
+header img {
+    width: 100%;
+}
+.burger{
+    margin:0 auto;
+    border-radius: 2em;
+    padding:3em;
+}
+.burger:hover{
+    background-color:rgba(9, 107, 30, 0.267);
+    cursor:pointer;
+}
